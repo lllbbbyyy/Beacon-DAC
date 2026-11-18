@@ -1,0 +1,37 @@
+# Credentials and local secrets
+key.json
+*.key
+*.pem
+.env
+.env.*
+!.env.example
+
+# Python bytecode and test caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments and build outputs
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Run outputs and local checkpoints
+runs/
+outputs/
+llm_trace/
+*.log
+*.sqlite
+*.sqlite-*
+*.db
+
+# OS / IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
