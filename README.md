@@ -2,7 +2,7 @@
 
 **Beacon: Hierarchical Multi-Agent Design Space Exploration for Heterogeneous Multi-Chiplet LLM Accelerators**
 
-Beacon is a hierarchical multi-agent framework for joint hardware and parallelism design space exploration (DSE) of heterogeneous multi-chiplet large language model (LLM) accelerators. It decouples fast system-level performance and manufacturing-cost ($MC$) scoping from on-demand operator-level diagnosis, combining verified reference configuration tracking, cached report query tools, and context-matched experience retrieval (RAG) to generate duplicate-free multi-parameter updates directly.
+Beacon is a hierarchical multi-agent framework for architecture and parallelism design space exploration (DSE) of heterogeneous multi-chiplet large language model (LLM) accelerators. It decouples fast system-level performance and manufacturing-cost ($MC$) scoping from on-demand operator-level diagnosis, combining verified reference configuration tracking, cached report query tools, and context-matched experience retrieval (RAG) to generate duplicate-free multi-parameter updates directly.
 
 ## Repository Structure
 
@@ -10,7 +10,7 @@ Beacon is a hierarchical multi-agent framework for joint hardware and parallelis
 .
 ├── chiplet_tuner/              # Core Beacon hierarchical multi-agent framework
 │   ├── agents/                 # System Agent, on-demand Operator Agent, Solution Agent, ReAct loop
-│   ├── core/                   # Co-design space Z, composite objective J, reference & coverage tracking
+│   ├── core/                   # Design space Z, composite objective J, reference & coverage tracking
 │   ├── llm/                    # OpenAI-compatible LLM client, prompts, and structured tracing
 │   ├── pipeline/               # LangGraph exploration loop with SQLite checkpoint/resume
 │   ├── rag/                    # Dual-channel context-matched RAG memory (symptom + hardware scale)
