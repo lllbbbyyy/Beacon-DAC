@@ -1,0 +1,476 @@
+{
+    "core0": [
+        {
+            "batchID": 0,
+            "calcEnergy": 487740.2112,
+            "dramEnergy": 2245017600.0,
+            "energy": 2583801958.56384,
+            "layerID": 0,
+            "layerName": "input_add",
+            "nocEnergy": 213811200.0,
+            "ubufEnergy": 124485418.35264
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 366162.7392,
+            "dramEnergy": 1262026752.0,
+            "energy": 1494556314.17344,
+            "layerID": 1,
+            "layerName": "layer0_norm1",
+            "nocEnergy": 120193024.0,
+            "ubufEnergy": 111970375.43424
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 295874140.73999995,
+            "dramEnergy": 800572416.0,
+            "energy": 1246971747.73456,
+            "layerID": 5,
+            "layerName": "layer0_qkv_gen_fused_tp_shard3",
+            "nocEnergy": 76244992.0,
+            "ubufEnergy": 74280198.99456
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 295874140.73999995,
+            "dramEnergy": 1152893952.0,
+            "energy": 1632847715.73456,
+            "layerID": 6,
+            "layerName": "layer0_qkv_gen_fused_tp_shard4",
+            "nocEnergy": 109799424.0,
+            "ubufEnergy": 74280198.99456
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 295874140.73999995,
+            "dramEnergy": 1152893952.0,
+            "energy": 1632847715.73456,
+            "layerID": 7,
+            "layerName": "layer0_qkv_gen_fused_tp_shard5",
+            "nocEnergy": 109799424.0,
+            "ubufEnergy": 74280198.99456
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 295874140.73999995,
+            "dramEnergy": 1152893952.0,
+            "energy": 1632847715.73456,
+            "layerID": 8,
+            "layerName": "layer0_qkv_gen_fused_tp_shard6",
+            "nocEnergy": 109799424.0,
+            "ubufEnergy": 74280198.99456
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 1769079954.783953,
+            "dramEnergy": 28311992688.0,
+            "energy": 38124439332.17672,
+            "layerID": 10,
+            "layerName": "layer0_Attn_QK",
+            "nocEnergy": 2732015456.0,
+            "ubufEnergy": 5311351233.39263
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 234020463.55999997,
+            "dramEnergy": 1018031616.0,
+            "energy": 1423659893.27104,
+            "layerID": 12,
+            "layerName": "layer0_out_proj_tiling_0",
+            "nocEnergy": 96957440.0,
+            "ubufEnergy": 74650373.71104
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 234020463.55999997,
+            "dramEnergy": 1018031616.0,
+            "energy": 1423659893.27104,
+            "layerID": 13,
+            "layerName": "layer0_out_proj_tiling_1",
+            "nocEnergy": 96957440.0,
+            "ubufEnergy": 74650373.71104
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 234020463.55999997,
+            "dramEnergy": 1018042368.0,
+            "energy": 1423669621.27104,
+            "layerID": 17,
+            "layerName": "layer0_out_proj_tiling_5",
+            "nocEnergy": 96956416.0,
+            "ubufEnergy": 74650373.71104
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 234020463.55999997,
+            "dramEnergy": 924499968.0,
+            "energy": 1321218421.27104,
+            "layerID": 18,
+            "layerName": "layer0_out_proj_tiling_6",
+            "nocEnergy": 88047616.0,
+            "ubufEnergy": 74650373.71104
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 853902.9504,
+            "dramEnergy": 3319959552.0,
+            "energy": 3891273472.73728,
+            "layerID": 20,
+            "layerName": "layer0_Out_Proj_Post",
+            "nocEnergy": 334004224.0,
+            "ubufEnergy": 236455793.78688002
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 685335314.72,
+            "dramEnergy": 1339978752.0,
+            "energy": 2225783162.22464,
+            "layerID": 28,
+            "layerName": "layer0_ffn1_tiling7",
+            "nocEnergy": 127617024.0,
+            "ubufEnergy": 72852071.50464001
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 685335314.72,
+            "dramEnergy": 1692300288.0,
+            "energy": 2611659130.22464,
+            "layerID": 29,
+            "layerName": "layer0_ffn_gate_tiling0",
+            "nocEnergy": 161171456.0,
+            "ubufEnergy": 72852071.50464001
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 685335314.72,
+            "dramEnergy": 1692300288.0,
+            "energy": 2611659130.22464,
+            "layerID": 30,
+            "layerName": "layer0_ffn_gate_tiling1",
+            "nocEnergy": 161171456.0,
+            "ubufEnergy": 72852071.50464001
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 685335314.72,
+            "dramEnergy": 1692300288.0,
+            "energy": 2611659130.22464,
+            "layerID": 31,
+            "layerName": "layer0_ffn_gate_tiling2",
+            "nocEnergy": 161171456.0,
+            "ubufEnergy": 72852071.50464001
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 685335314.72,
+            "dramEnergy": 1692300288.0,
+            "energy": 2611659130.22464,
+            "layerID": 32,
+            "layerName": "layer0_ffn_gate_tiling3",
+            "nocEnergy": 161171456.0,
+            "ubufEnergy": 72852071.50464001
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 685335314.72,
+            "dramEnergy": 1692300288.0,
+            "energy": 2611659130.22464,
+            "layerID": 33,
+            "layerName": "layer0_ffn_gate_tiling4",
+            "nocEnergy": 161171456.0,
+            "ubufEnergy": 72852071.50464001
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 685335314.72,
+            "dramEnergy": 1692300288.0,
+            "energy": 2611659130.22464,
+            "layerID": 34,
+            "layerName": "layer0_ffn_gate_tiling5",
+            "nocEnergy": 161171456.0,
+            "ubufEnergy": 72852071.50464001
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 685335314.72,
+            "dramEnergy": 1364901888.0,
+            "energy": 2253079930.22464,
+            "layerID": 36,
+            "layerName": "layer0_ffn_gate_tiling7",
+            "nocEnergy": 129990656.0,
+            "ubufEnergy": 72852071.50464001
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 702061390.68,
+            "dramEnergy": 3094468608.0,
+            "energy": 4210619988.39104,
+            "layerID": 38,
+            "layerName": "layer0_ffn2_tiling0",
+            "nocEnergy": 339439616.0,
+            "ubufEnergy": 74650373.71104
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 702061390.68,
+            "dramEnergy": 3094468608.0,
+            "energy": 4210619988.39104,
+            "layerID": 39,
+            "layerName": "layer0_ffn2_tiling1",
+            "nocEnergy": 339439616.0,
+            "ubufEnergy": 74650373.71104
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 702061390.68,
+            "dramEnergy": 3094468608.0,
+            "energy": 4210619988.39104,
+            "layerID": 40,
+            "layerName": "layer0_ffn2_tiling2",
+            "nocEnergy": 339439616.0,
+            "ubufEnergy": 74650373.71104
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 702061390.68,
+            "dramEnergy": 3235749888.0,
+            "energy": 4320628308.39104,
+            "layerID": 44,
+            "layerName": "layer0_ffn2_tiling6",
+            "nocEnergy": 308166656.0,
+            "ubufEnergy": 74650373.71104
+        }
+    ],
+    "core1": [
+        {
+            "batchID": 0,
+            "calcEnergy": 295874140.73999995,
+            "dramEnergy": 800572416.0,
+            "energy": 1314080611.73456,
+            "layerID": 2,
+            "layerName": "layer0_qkv_gen_fused_tp_shard0",
+            "nocEnergy": 143353856.0,
+            "ubufEnergy": 74280198.99456
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 295874140.73999995,
+            "dramEnergy": 800572416.0,
+            "energy": 1314080611.73456,
+            "layerID": 3,
+            "layerName": "layer0_qkv_gen_fused_tp_shard1",
+            "nocEnergy": 143353856.0,
+            "ubufEnergy": 74280198.99456
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 295874140.73999995,
+            "dramEnergy": 800572416.0,
+            "energy": 1314080611.73456,
+            "layerID": 4,
+            "layerName": "layer0_qkv_gen_fused_tp_shard2",
+            "nocEnergy": 143353856.0,
+            "ubufEnergy": 74280198.99456
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 295874140.73999995,
+            "dramEnergy": 1152893952.0,
+            "energy": 1632847715.73456,
+            "layerID": 9,
+            "layerName": "layer0_qkv_gen_fused_tp_shard7",
+            "nocEnergy": 109799424.0,
+            "ubufEnergy": 74280198.99456
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 2090572485.8239937,
+            "dramEnergy": 28499077488.0,
+            "energy": 36347053217.71288,
+            "layerID": 11,
+            "layerName": "layer0_Attn_AV",
+            "nocEnergy": 2714212544.0,
+            "ubufEnergy": 3043190699.8886447
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 234020463.55999997,
+            "dramEnergy": 1018031616.0,
+            "energy": 1423657845.27104,
+            "layerID": 14,
+            "layerName": "layer0_out_proj_tiling_2",
+            "nocEnergy": 96955392.0,
+            "ubufEnergy": 74650373.71104
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 234020463.55999997,
+            "dramEnergy": 1018042368.0,
+            "energy": 1423669621.27104,
+            "layerID": 15,
+            "layerName": "layer0_out_proj_tiling_3",
+            "nocEnergy": 96956416.0,
+            "ubufEnergy": 74650373.71104
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 234020463.55999997,
+            "dramEnergy": 1018042368.0,
+            "energy": 1423669621.27104,
+            "layerID": 16,
+            "layerName": "layer0_out_proj_tiling_4",
+            "nocEnergy": 96956416.0,
+            "ubufEnergy": 74650373.71104
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 234020463.55999997,
+            "dramEnergy": 924499968.0,
+            "energy": 1321218421.27104,
+            "layerID": 19,
+            "layerName": "layer0_out_proj_tiling_7",
+            "nocEnergy": 88047616.0,
+            "ubufEnergy": 74650373.71104
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 685335314.72,
+            "dramEnergy": 1339978752.0,
+            "energy": 2292892026.22464,
+            "layerID": 21,
+            "layerName": "layer0_ffn1_tiling0",
+            "nocEnergy": 194725888.0,
+            "ubufEnergy": 72852071.50464001
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 685335314.72,
+            "dramEnergy": 1339978752.0,
+            "energy": 2292892026.22464,
+            "layerID": 22,
+            "layerName": "layer0_ffn1_tiling1",
+            "nocEnergy": 194725888.0,
+            "ubufEnergy": 72852071.50464001
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 685335314.72,
+            "dramEnergy": 1339978752.0,
+            "energy": 2292892026.22464,
+            "layerID": 23,
+            "layerName": "layer0_ffn1_tiling2",
+            "nocEnergy": 194725888.0,
+            "ubufEnergy": 72852071.50464001
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 685335314.72,
+            "dramEnergy": 1339978752.0,
+            "energy": 2292892026.22464,
+            "layerID": 24,
+            "layerName": "layer0_ffn1_tiling3",
+            "nocEnergy": 194725888.0,
+            "ubufEnergy": 72852071.50464001
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 685335314.72,
+            "dramEnergy": 1339978752.0,
+            "energy": 2292892026.22464,
+            "layerID": 25,
+            "layerName": "layer0_ffn1_tiling4",
+            "nocEnergy": 194725888.0,
+            "ubufEnergy": 72852071.50464001
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 685335314.72,
+            "dramEnergy": 1339978752.0,
+            "energy": 2292892026.22464,
+            "layerID": 26,
+            "layerName": "layer0_ffn1_tiling5",
+            "nocEnergy": 194725888.0,
+            "ubufEnergy": 72852071.50464001
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 685335314.72,
+            "dramEnergy": 1339978752.0,
+            "energy": 2292892026.22464,
+            "layerID": 27,
+            "layerName": "layer0_ffn1_tiling6",
+            "nocEnergy": 194725888.0,
+            "ubufEnergy": 72852071.50464001
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 685335314.72,
+            "dramEnergy": 1364901888.0,
+            "energy": 2253079930.22464,
+            "layerID": 35,
+            "layerName": "layer0_ffn_gate_tiling6",
+            "nocEnergy": 129990656.0,
+            "ubufEnergy": 72852071.50464001
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 853545.3696000001,
+            "dramEnergy": 11737872384.0,
+            "energy": 13526789176.60672,
+            "layerID": 37,
+            "layerName": "layer0_FFN1_Act",
+            "nocEnergy": 1180254208.0,
+            "ubufEnergy": 607809039.23712
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 702061390.68,
+            "dramEnergy": 3094468608.0,
+            "energy": 4165891668.39104,
+            "layerID": 41,
+            "layerName": "layer0_ffn2_tiling3",
+            "nocEnergy": 294711296.0,
+            "ubufEnergy": 74650373.71104
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 702061390.68,
+            "dramEnergy": 3329292288.0,
+            "energy": 4423079508.39104,
+            "layerID": 42,
+            "layerName": "layer0_ffn2_tiling4",
+            "nocEnergy": 317075456.0,
+            "ubufEnergy": 74650373.71104
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 702061390.68,
+            "dramEnergy": 3329292288.0,
+            "energy": 4423079508.39104,
+            "layerID": 43,
+            "layerName": "layer0_ffn2_tiling5",
+            "nocEnergy": 317075456.0,
+            "ubufEnergy": 74650373.71104
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 702061390.68,
+            "dramEnergy": 3235749888.0,
+            "energy": 4320628308.39104,
+            "layerID": 45,
+            "layerName": "layer0_ffn2_tiling7",
+            "nocEnergy": 308166656.0,
+            "ubufEnergy": 74650373.71104
+        },
+        {
+            "batchID": 0,
+            "calcEnergy": 487740.2112,
+            "dramEnergy": 2057932800.0,
+            "energy": 2396717158.56384,
+            "layerID": 46,
+            "layerName": "layer0_FFN2_Post",
+            "nocEnergy": 213811200.0,
+            "ubufEnergy": 124485418.35264
+        }
+    ]
+}

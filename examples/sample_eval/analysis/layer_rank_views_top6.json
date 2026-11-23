@@ -1,0 +1,1277 @@
+{
+  "report_schema_version": 2,
+  "metrics": {
+    "latency": 58727234.0,
+    "energy": 194006967669.30197,
+    "edp": 1.1393492587945531e+19,
+    "mc": 15.552225566467788,
+    "base_objective": 1.7719416671760774e+20,
+    "compute_budget_penalty": 1.0,
+    "objective": 1.7719416671760774e+20
+  },
+  "layer_count": 47,
+  "aggregate_breakdown": {
+    "time": {
+      "compute": 0.640552,
+      "memory": 0.189456,
+      "communication": 0.169992
+    },
+    "energy": {
+      "compute": 0.191002,
+      "memory": 0.692481,
+      "communication": 0.074621,
+      "buffer": 0.041896
+    }
+  },
+  "layer_rank_views": {
+    "latency_sum": [
+      {
+        "layer_id": 11,
+        "layer_name": "layer0_Attn_AV",
+        "operator_group": "attention",
+        "rank_metric": "latency_sum",
+        "rank_value": 14073804.0,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 14073804.0,
+          "latency_max": 14073804.0,
+          "critical_end": 19535960.0,
+          "calc_time": 8770752.0,
+          "noc_time": 5163854.0,
+          "dram_time": 5303025.0
+        },
+        "energy": {
+          "total": 36347053217.71288
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 10,
+        "layer_name": "layer0_Attn_QK",
+        "operator_group": "attention",
+        "rank_metric": "latency_sum",
+        "rank_value": 12253057.0,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 12253057.0,
+          "latency_max": 12253057.0,
+          "critical_end": 17531369.0,
+          "calc_time": 6915232.0,
+          "noc_time": 5337825.0,
+          "dram_time": 5268225.0
+        },
+        "energy": {
+          "total": 38124439332.17672
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 38,
+        "layer_name": "layer0_ffn2_tiling0",
+        "operator_group": "ffn",
+        "rank_metric": "latency_sum",
+        "rank_value": 2904934.0,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2904934.0,
+          "latency_max": 2904934.0,
+          "critical_end": 49667856.0,
+          "calc_time": 2259366.0,
+          "noc_time": 645568.0,
+          "dram_time": 575608.0
+        },
+        "energy": {
+          "total": 4210619988.39104
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 39,
+        "layer_name": "layer0_ffn2_tiling1",
+        "operator_group": "ffn",
+        "rank_metric": "latency_sum",
+        "rank_value": 2904934.0,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2904934.0,
+          "latency_max": 2904934.0,
+          "critical_end": 52572790.0,
+          "calc_time": 2259366.0,
+          "noc_time": 645568.0,
+          "dram_time": 575608.0
+        },
+        "energy": {
+          "total": 4210619988.39104
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 40,
+        "layer_name": "layer0_ffn2_tiling2",
+        "operator_group": "ffn",
+        "rank_metric": "latency_sum",
+        "rank_value": 2904934.0,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2904934.0,
+          "latency_max": 2904934.0,
+          "critical_end": 55477724.0,
+          "calc_time": 2259366.0,
+          "noc_time": 645568.0,
+          "dram_time": 575608.0
+        },
+        "energy": {
+          "total": 4210619988.39104
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 42,
+        "layer_name": "layer0_ffn2_tiling4",
+        "operator_group": "ffn",
+        "rank_metric": "latency_sum",
+        "rank_value": 2878654.0,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2878654.0,
+          "latency_max": 2878654.0,
+          "critical_end": 52476550.0,
+          "calc_time": 2259366.0,
+          "noc_time": 601888.0,
+          "dram_time": 619288.0
+        },
+        "energy": {
+          "total": 4423079508.39104
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      }
+    ],
+    "energy": [
+      {
+        "layer_id": 10,
+        "layer_name": "layer0_Attn_QK",
+        "operator_group": "attention",
+        "rank_metric": "energy",
+        "rank_value": 38124439332.17672,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 12253057.0,
+          "latency_max": 12253057.0,
+          "critical_end": 17531369.0,
+          "calc_time": 6915232.0,
+          "noc_time": 5337825.0,
+          "dram_time": 5268225.0
+        },
+        "energy": {
+          "total": 38124439332.17672
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 11,
+        "layer_name": "layer0_Attn_AV",
+        "operator_group": "attention",
+        "rank_metric": "energy",
+        "rank_value": 36347053217.71288,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 14073804.0,
+          "latency_max": 14073804.0,
+          "critical_end": 19535960.0,
+          "calc_time": 8770752.0,
+          "noc_time": 5163854.0,
+          "dram_time": 5303025.0
+        },
+        "energy": {
+          "total": 36347053217.71288
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 37,
+        "layer_name": "layer0_FFN1_Act",
+        "operator_group": "ffn",
+        "rank_metric": "energy",
+        "rank_value": 13526789176.60672,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2192932.0,
+          "latency_max": 2192932.0,
+          "critical_end": 46762922.0,
+          "calc_time": 9548.0,
+          "noc_time": 1396192.0,
+          "dram_time": 2183384.0
+        },
+        "energy": {
+          "total": 13526789176.60672
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 42,
+        "layer_name": "layer0_ffn2_tiling4",
+        "operator_group": "ffn",
+        "rank_metric": "energy",
+        "rank_value": 4423079508.39104,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2878654.0,
+          "latency_max": 2878654.0,
+          "critical_end": 52476550.0,
+          "calc_time": 2259366.0,
+          "noc_time": 601888.0,
+          "dram_time": 619288.0
+        },
+        "energy": {
+          "total": 4423079508.39104
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 43,
+        "layer_name": "layer0_ffn2_tiling5",
+        "operator_group": "ffn",
+        "rank_metric": "energy",
+        "rank_value": 4423079508.39104,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2878654.0,
+          "latency_max": 2878654.0,
+          "critical_end": 55355204.0,
+          "calc_time": 2259366.0,
+          "noc_time": 601888.0,
+          "dram_time": 619288.0
+        },
+        "energy": {
+          "total": 4423079508.39104
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 44,
+        "layer_name": "layer0_ffn2_tiling6",
+        "operator_group": "ffn",
+        "rank_metric": "energy",
+        "rank_value": 4320628308.39104,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2861254.0,
+          "latency_max": 2861254.0,
+          "critical_end": 58338978.0,
+          "calc_time": 2259366.0,
+          "noc_time": 601888.0,
+          "dram_time": 601888.0
+        },
+        "energy": {
+          "total": 4320628308.39104
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      }
+    ],
+    "critical_end": [
+      {
+        "layer_id": 46,
+        "layer_name": "layer0_FFN2_Post",
+        "operator_group": "ffn",
+        "rank_metric": "critical_end",
+        "rank_value": 58727234.0,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 388256.0,
+          "latency_max": 388256.0,
+          "critical_end": 58727234.0,
+          "calc_time": 5456.0,
+          "noc_time": 278400.0,
+          "dram_time": 382800.0
+        },
+        "energy": {
+          "total": 2396717158.56384
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 44,
+        "layer_name": "layer0_ffn2_tiling6",
+        "operator_group": "ffn",
+        "rank_metric": "critical_end",
+        "rank_value": 58338978.0,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2861254.0,
+          "latency_max": 2861254.0,
+          "critical_end": 58338978.0,
+          "calc_time": 2259366.0,
+          "noc_time": 601888.0,
+          "dram_time": 601888.0
+        },
+        "energy": {
+          "total": 4320628308.39104
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 45,
+        "layer_name": "layer0_ffn2_tiling7",
+        "operator_group": "ffn",
+        "rank_metric": "critical_end",
+        "rank_value": 58216458.0,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2861254.0,
+          "latency_max": 2861254.0,
+          "critical_end": 58216458.0,
+          "calc_time": 2259366.0,
+          "noc_time": 601888.0,
+          "dram_time": 601888.0
+        },
+        "energy": {
+          "total": 4320628308.39104
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 40,
+        "layer_name": "layer0_ffn2_tiling2",
+        "operator_group": "ffn",
+        "rank_metric": "critical_end",
+        "rank_value": 55477724.0,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2904934.0,
+          "latency_max": 2904934.0,
+          "critical_end": 55477724.0,
+          "calc_time": 2259366.0,
+          "noc_time": 645568.0,
+          "dram_time": 575608.0
+        },
+        "energy": {
+          "total": 4210619988.39104
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 43,
+        "layer_name": "layer0_ffn2_tiling5",
+        "operator_group": "ffn",
+        "rank_metric": "critical_end",
+        "rank_value": 55355204.0,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2878654.0,
+          "latency_max": 2878654.0,
+          "critical_end": 55355204.0,
+          "calc_time": 2259366.0,
+          "noc_time": 601888.0,
+          "dram_time": 619288.0
+        },
+        "energy": {
+          "total": 4423079508.39104
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 39,
+        "layer_name": "layer0_ffn2_tiling1",
+        "operator_group": "ffn",
+        "rank_metric": "critical_end",
+        "rank_value": 52572790.0,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2904934.0,
+          "latency_max": 2904934.0,
+          "critical_end": 52572790.0,
+          "calc_time": 2259366.0,
+          "noc_time": 645568.0,
+          "dram_time": 575608.0
+        },
+        "energy": {
+          "total": 4210619988.39104
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      }
+    ],
+    "compute": [
+      {
+        "layer_id": 28,
+        "layer_name": "layer0_ffn1_tiling7",
+        "operator_group": "ffn",
+        "rank_metric": "compute",
+        "rank_value": 0.8384132742134166,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2519816.0,
+          "latency_max": 2519816.0,
+          "critical_end": 26435438.0,
+          "calc_time": 2270564.0,
+          "noc_time": 188352.0,
+          "dram_time": 249252.0
+        },
+        "energy": {
+          "total": 2225783162.22464
+        },
+        "root_cause": {
+          "dominant_dimension": "compute"
+        }
+      },
+      {
+        "layer_id": 35,
+        "layer_name": "layer0_ffn_gate_tiling6",
+        "operator_group": "ffn",
+        "rank_metric": "compute",
+        "rank_value": 0.8172376311034647,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2524452.0,
+          "latency_max": 2524452.0,
+          "critical_end": 44569990.0,
+          "calc_time": 2270564.0,
+          "noc_time": 253888.0,
+          "dram_time": 253888.0
+        },
+        "energy": {
+          "total": 2253079930.22464
+        },
+        "root_cause": {
+          "dominant_dimension": "compute"
+        }
+      },
+      {
+        "layer_id": 36,
+        "layer_name": "layer0_ffn_gate_tiling7",
+        "operator_group": "ffn",
+        "rank_metric": "compute",
+        "rank_value": 0.8172376311034647,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2524452.0,
+          "latency_max": 2524452.0,
+          "critical_end": 44472002.0,
+          "calc_time": 2270564.0,
+          "noc_time": 253888.0,
+          "dram_time": 253888.0
+        },
+        "energy": {
+          "total": 2253079930.22464
+        },
+        "root_cause": {
+          "dominant_dimension": "compute"
+        }
+      },
+      {
+        "layer_id": 21,
+        "layer_name": "layer0_ffn1_tiling0",
+        "operator_group": "ffn",
+        "rank_metric": "compute",
+        "rank_value": 0.799708372663107,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2589988.0,
+          "latency_max": 2589988.0,
+          "critical_end": 26505610.0,
+          "calc_time": 2270564.0,
+          "noc_time": 319424.0,
+          "dram_time": 249252.0
+        },
+        "energy": {
+          "total": 2292892026.22464
+        },
+        "root_cause": {
+          "dominant_dimension": "compute"
+        }
+      },
+      {
+        "layer_id": 22,
+        "layer_name": "layer0_ffn1_tiling1",
+        "operator_group": "ffn",
+        "rank_metric": "compute",
+        "rank_value": 0.799708372663107,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2589988.0,
+          "latency_max": 2589988.0,
+          "critical_end": 29095598.0,
+          "calc_time": 2270564.0,
+          "noc_time": 319424.0,
+          "dram_time": 249252.0
+        },
+        "energy": {
+          "total": 2292892026.22464
+        },
+        "root_cause": {
+          "dominant_dimension": "compute"
+        }
+      },
+      {
+        "layer_id": 23,
+        "layer_name": "layer0_ffn1_tiling2",
+        "operator_group": "ffn",
+        "rank_metric": "compute",
+        "rank_value": 0.799708372663107,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2589988.0,
+          "latency_max": 2589988.0,
+          "critical_end": 31685586.0,
+          "calc_time": 2270564.0,
+          "noc_time": 319424.0,
+          "dram_time": 249252.0
+        },
+        "energy": {
+          "total": 2292892026.22464
+        },
+        "root_cause": {
+          "dominant_dimension": "compute"
+        }
+      }
+    ],
+    "memory": [
+      {
+        "layer_id": 0,
+        "layer_name": "input_add",
+        "operator_group": "other",
+        "rank_metric": "memory",
+        "rank_value": 0.868881452991797,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 423056.0,
+          "latency_max": 423056.0,
+          "critical_end": 423056.0,
+          "calc_time": 5456.0,
+          "noc_time": 278400.0,
+          "dram_time": 417600.0
+        },
+        "energy": {
+          "total": 2583801958.56384
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 37,
+        "layer_name": "layer0_FFN1_Act",
+        "operator_group": "ffn",
+        "rank_metric": "memory",
+        "rank_value": 0.8677500795458186,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2192932.0,
+          "latency_max": 2192932.0,
+          "critical_end": 46762922.0,
+          "calc_time": 9548.0,
+          "noc_time": 1396192.0,
+          "dram_time": 2183384.0
+        },
+        "energy": {
+          "total": 13526789176.60672
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 46,
+        "layer_name": "layer0_FFN2_Post",
+        "operator_group": "ffn",
+        "rank_metric": "memory",
+        "rank_value": 0.8586465001290156,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 388256.0,
+          "latency_max": 388256.0,
+          "critical_end": 58727234.0,
+          "calc_time": 5456.0,
+          "noc_time": 278400.0,
+          "dram_time": 382800.0
+        },
+        "energy": {
+          "total": 2396717158.56384
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 20,
+        "layer_name": "layer0_Out_Proj_Post",
+        "operator_group": "output_projection",
+        "rank_metric": "memory",
+        "rank_value": 0.85318073254425,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 627104.0,
+          "latency_max": 627104.0,
+          "critical_end": 23915622.0,
+          "calc_time": 9552.0,
+          "noc_time": 417600.0,
+          "dram_time": 617552.0
+        },
+        "energy": {
+          "total": 3891273472.73728
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 1,
+        "layer_name": "layer0_norm1",
+        "operator_group": "other",
+        "rank_metric": "memory",
+        "rank_value": 0.8444156570292637,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 238848.0,
+          "latency_max": 238848.0,
+          "critical_end": 661904.0,
+          "calc_time": 4096.0,
+          "noc_time": 139200.0,
+          "dram_time": 234752.0
+        },
+        "energy": {
+          "total": 1494556314.17344
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 11,
+        "layer_name": "layer0_Attn_AV",
+        "operator_group": "attention",
+        "rank_metric": "memory",
+        "rank_value": 0.7840822010327826,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 14073804.0,
+          "latency_max": 14073804.0,
+          "critical_end": 19535960.0,
+          "calc_time": 8770752.0,
+          "noc_time": 5163854.0,
+          "dram_time": 5303025.0
+        },
+        "energy": {
+          "total": 36347053217.71288
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      }
+    ],
+    "communication": [
+      {
+        "layer_id": 46,
+        "layer_name": "layer0_FFN2_Post",
+        "operator_group": "ffn",
+        "rank_metric": "communication",
+        "rank_value": 0.4176066817069073,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 388256.0,
+          "latency_max": 388256.0,
+          "critical_end": 58727234.0,
+          "calc_time": 5456.0,
+          "noc_time": 278400.0,
+          "dram_time": 382800.0
+        },
+        "energy": {
+          "total": 2396717158.56384
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 20,
+        "layer_name": "layer0_Out_Proj_Post",
+        "operator_group": "output_projection",
+        "rank_metric": "communication",
+        "rank_value": 0.3997304499647747,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 627104.0,
+          "latency_max": 627104.0,
+          "critical_end": 23915622.0,
+          "calc_time": 9552.0,
+          "noc_time": 417600.0,
+          "dram_time": 617552.0
+        },
+        "energy": {
+          "total": 3891273472.73728
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 0,
+        "layer_name": "input_add",
+        "operator_group": "other",
+        "rank_metric": "communication",
+        "rank_value": 0.3968887570995187,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 423056.0,
+          "latency_max": 423056.0,
+          "critical_end": 423056.0,
+          "calc_time": 5456.0,
+          "noc_time": 278400.0,
+          "dram_time": 417600.0
+        },
+        "energy": {
+          "total": 2583801958.56384
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 37,
+        "layer_name": "layer0_FFN1_Act",
+        "operator_group": "ffn",
+        "rank_metric": "communication",
+        "rank_value": 0.3890063424947146,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 2192932.0,
+          "latency_max": 2192932.0,
+          "critical_end": 46762922.0,
+          "calc_time": 9548.0,
+          "noc_time": 1396192.0,
+          "dram_time": 2183384.0
+        },
+        "energy": {
+          "total": 13526789176.60672
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 1,
+        "layer_name": "layer0_norm1",
+        "operator_group": "other",
+        "rank_metric": "communication",
+        "rank_value": 0.36820721178263077,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 238848.0,
+          "latency_max": 238848.0,
+          "critical_end": 661904.0,
+          "calc_time": 4096.0,
+          "noc_time": 139200.0,
+          "dram_time": 234752.0
+        },
+        "energy": {
+          "total": 1494556314.17344
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 10,
+        "layer_name": "layer0_Attn_QK",
+        "operator_group": "attention",
+        "rank_metric": "communication",
+        "rank_value": 0.3046480845408458,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 12253057.0,
+          "latency_max": 12253057.0,
+          "critical_end": 17531369.0,
+          "calc_time": 6915232.0,
+          "noc_time": 5337825.0,
+          "dram_time": 5268225.0
+        },
+        "energy": {
+          "total": 38124439332.17672
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      }
+    ],
+    "buffer": [
+      {
+        "layer_id": 10,
+        "layer_name": "layer0_Attn_QK",
+        "operator_group": "attention",
+        "rank_metric": "buffer",
+        "rank_value": 0.13931617950142264,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 12253057.0,
+          "latency_max": 12253057.0,
+          "critical_end": 17531369.0,
+          "calc_time": 6915232.0,
+          "noc_time": 5337825.0,
+          "dram_time": 5268225.0
+        },
+        "energy": {
+          "total": 38124439332.17672
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 11,
+        "layer_name": "layer0_Attn_AV",
+        "operator_group": "attention",
+        "rank_metric": "buffer",
+        "rank_value": 0.08372592632641859,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 14073804.0,
+          "latency_max": 14073804.0,
+          "critical_end": 19535960.0,
+          "calc_time": 8770752.0,
+          "noc_time": 5163854.0,
+          "dram_time": 5303025.0
+        },
+        "energy": {
+          "total": 36347053217.71288
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 1,
+        "layer_name": "layer0_norm1",
+        "operator_group": "other",
+        "rank_metric": "buffer",
+        "rank_value": 0.07491880658653192,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 238848.0,
+          "latency_max": 238848.0,
+          "critical_end": 661904.0,
+          "calc_time": 4096.0,
+          "noc_time": 139200.0,
+          "dram_time": 234752.0
+        },
+        "energy": {
+          "total": 1494556314.17344
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 20,
+        "layer_name": "layer0_Out_Proj_Post",
+        "operator_group": "output_projection",
+        "rank_metric": "buffer",
+        "rank_value": 0.06076565819480875,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 627104.0,
+          "latency_max": 627104.0,
+          "critical_end": 23915622.0,
+          "calc_time": 9552.0,
+          "noc_time": 417600.0,
+          "dram_time": 617552.0
+        },
+        "energy": {
+          "total": 3891273472.73728
+        },
+        "root_cause": {
+          "dominant_dimension": "memory"
+        }
+      },
+      {
+        "layer_id": 5,
+        "layer_name": "layer0_qkv_gen_fused_tp_shard3",
+        "operator_group": "qkv_projection",
+        "rank_metric": "buffer",
+        "rank_value": 0.059568469878735264,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core0"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 1104950.0,
+          "latency_max": 1104950.0,
+          "critical_end": 1766854.0,
+          "calc_time": 956034.0,
+          "noc_time": 122816.0,
+          "dram_time": 148916.0
+        },
+        "energy": {
+          "total": 1246971747.73456
+        },
+        "root_cause": {
+          "dominant_dimension": "compute"
+        }
+      },
+      {
+        "layer_id": 2,
+        "layer_name": "layer0_qkv_gen_fused_tp_shard0",
+        "operator_group": "qkv_projection",
+        "rank_metric": "buffer",
+        "rank_value": 0.05652636400784548,
+        "placement": {
+          "occurrences": 1,
+          "core_count": 1,
+          "cores": [
+            "core1"
+          ],
+          "batch_count": 1
+        },
+        "timing": {
+          "latency_sum": 1209922.0,
+          "latency_max": 1209922.0,
+          "critical_end": 1871826.0,
+          "calc_time": 956034.0,
+          "noc_time": 253888.0,
+          "dram_time": 148916.0
+        },
+        "energy": {
+          "total": 1314080611.73456
+        },
+        "root_cause": {
+          "dominant_dimension": "compute"
+        }
+      }
+    ]
+  },
+  "rank_notes": {
+    "no_single_bottleneck_metric": true,
+    "agent_should_choose_bottleneck_objective": true,
+    "available_views": [
+      "buffer",
+      "communication",
+      "compute",
+      "critical_end",
+      "energy",
+      "latency_sum",
+      "memory"
+    ],
+    "requested_top_layers": 6,
+    "effective_top_layers": 6,
+    "top_layers_default": 8,
+    "top_layers_cap": 12
+  }
+}

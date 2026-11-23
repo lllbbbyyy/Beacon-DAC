@@ -21,9 +21,9 @@ from chiplet_tuner.tools.analysis_tools import AnalysisToolbox
 
 
 ROOT = Path(__file__).resolve().parents[2]
-SOURCE_RUN = ROOT / "Compass" / "try"
-SOURCE_HARDWARE = SOURCE_RUN / "hardware_ws.json"
-OUT_DIR = ROOT / "tmp" / "mock_prompt_dump"
+SOURCE_RUN = ROOT / "examples" / "sample_eval"
+SOURCE_HARDWARE = SOURCE_RUN / "hardware.json"
+OUT_DIR = ROOT / "runs" / "mock_prompt_dump"
 
 
 DIALOGUE_GROUPS = [

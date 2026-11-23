@@ -1,4 +1,4 @@
-"""Opt-in analysis budget and role contracts for development pilots; ordinary runs are unchanged."""
+"""Hierarchical system-first scoping policy and role contracts for Beacon agents."""
 import os
 
 from chiplet_tuner.llm.prompts import (

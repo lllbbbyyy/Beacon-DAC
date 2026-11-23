@@ -1,0 +1,546 @@
+{
+  "metrics": {
+    "latency": 58727234.0,
+    "energy": 194006967669.30197,
+    "edp": 1.1393492587945531e+19,
+    "mc": 15.552225566467788,
+    "base_objective": 1.7719416671760774e+20,
+    "compute_budget_penalty": 1.0,
+    "objective": 1.7719416671760774e+20
+  },
+  "layers": [
+    {
+      "layer_id": 10,
+      "layer_name": "layer0_Attn_QK",
+      "operator_group": "attention",
+      "shares": {
+        "latency_sum_share": 0.2086435230373697,
+        "energy_share": 0.196510670674274,
+        "objective_reference": 1.7719416671760774e+20
+      },
+      "placement": {
+        "occurrences": 1,
+        "core_count": 1,
+        "cores": [
+          "core0"
+        ],
+        "batch_count": 1
+      },
+      "timing": {
+        "latency_sum": 12253057.0,
+        "latency_max": 12253057.0,
+        "critical_end": 17531369.0,
+        "calc_time": 6915232.0,
+        "noc_time": 5337825.0,
+        "dram_time": 5268225.0
+      },
+      "energy": {
+        "total": 38124439332.17672
+      },
+      "breakdown": {
+        "time": {
+          "compute": 0.39467614298999354,
+          "communication": 0.3046480845408458,
+          "memory": 0.30067577246916066
+        },
+        "energy": {
+          "compute": 0.04640277957585238,
+          "buffer": 0.13931617950142264,
+          "communication": 0.07166047563863322,
+          "memory": 0.7426205652840882
+        }
+      },
+      "root_cause": {
+        "dominant_dimension": "memory"
+      },
+      "features": {
+        "group": "attention",
+        "head": null,
+        "request": null,
+        "tiling": null,
+        "is_projection": false,
+        "is_elementwise": false,
+        "gemm_shapes": [
+          {
+            "layer_id": 10,
+            "M": 2048,
+            "N": 2048,
+            "K": 128,
+            "rhs": "activation",
+            "scope": "execution_gemm_before_buffer_tiling",
+            "occurrences": 1,
+            "example_batch_ids": [
+              0
+            ]
+          },
+          {
+            "layer_id": 12,
+            "M": 1,
+            "N": 2,
+            "K": 128,
+            "rhs": "activation",
+            "scope": "execution_gemm_before_buffer_tiling",
+            "occurrences": 1,
+            "example_batch_ids": [
+              0
+            ]
+          },
+          {
+            "layer_id": 14,
+            "M": 1,
+            "N": 3,
+            "K": 128,
+            "rhs": "activation",
+            "scope": "execution_gemm_before_buffer_tiling",
+            "occurrences": 1,
+            "example_batch_ids": [
+              0
+            ]
+          },
+          {
+            "layer_id": 16,
+            "M": 1,
+            "N": 3,
+            "K": 128,
+            "rhs": "activation",
+            "scope": "execution_gemm_before_buffer_tiling",
+            "occurrences": 1,
+            "example_batch_ids": [
+              0
+            ]
+          }
+        ]
+      },
+      "impact_types": [
+        "latency",
+        "energy"
+      ],
+      "root_causes": [
+        "memory",
+        "compute",
+        "communication"
+      ],
+      "dominant_root_cause": "memory"
+    },
+    {
+      "layer_id": 11,
+      "layer_name": "layer0_Attn_AV",
+      "operator_group": "attention",
+      "shares": {
+        "latency_sum_share": 0.23964697537091564,
+        "energy_share": 0.1873492156202807,
+        "objective_reference": 1.7719416671760774e+20
+      },
+      "placement": {
+        "occurrences": 1,
+        "core_count": 1,
+        "cores": [
+          "core1"
+        ],
+        "batch_count": 1
+      },
+      "timing": {
+        "latency_sum": 14073804.0,
+        "latency_max": 14073804.0,
+        "critical_end": 19535960.0,
+        "calc_time": 8770752.0,
+        "noc_time": 5163854.0,
+        "dram_time": 5303025.0
+      },
+      "energy": {
+        "total": 36347053217.71288
+      },
+      "breakdown": {
+        "time": {
+          "compute": 0.4559164275476539,
+          "communication": 0.2684246308706098,
+          "memory": 0.2756589415817363
+        },
+        "energy": {
+          "compute": 0.057516973200050295,
+          "buffer": 0.08372592632641859,
+          "communication": 0.0746748994407418,
+          "memory": 0.7840822010327826
+        }
+      },
+      "root_cause": {
+        "dominant_dimension": "memory"
+      },
+      "features": {
+        "group": "attention",
+        "head": null,
+        "request": null,
+        "tiling": null,
+        "is_projection": false,
+        "is_elementwise": false,
+        "gemm_shapes": [
+          {
+            "layer_id": 8202,
+            "M": 2048,
+            "N": 128,
+            "K": 2048,
+            "rhs": "activation",
+            "scope": "execution_gemm_before_buffer_tiling",
+            "occurrences": 1,
+            "example_batch_ids": [
+              0
+            ]
+          },
+          {
+            "layer_id": 8203,
+            "M": 1,
+            "N": 128,
+            "K": 2,
+            "rhs": "activation",
+            "scope": "execution_gemm_before_buffer_tiling",
+            "occurrences": 1,
+            "example_batch_ids": [
+              0
+            ]
+          },
+          {
+            "layer_id": 8204,
+            "M": 1,
+            "N": 128,
+            "K": 3,
+            "rhs": "activation",
+            "scope": "execution_gemm_before_buffer_tiling",
+            "occurrences": 1,
+            "example_batch_ids": [
+              0
+            ]
+          },
+          {
+            "layer_id": 8205,
+            "M": 1,
+            "N": 128,
+            "K": 3,
+            "rhs": "activation",
+            "scope": "execution_gemm_before_buffer_tiling",
+            "occurrences": 1,
+            "example_batch_ids": [
+              0
+            ]
+          }
+        ]
+      },
+      "impact_types": [
+        "latency",
+        "energy"
+      ],
+      "root_causes": [
+        "memory",
+        "compute",
+        "communication"
+      ],
+      "dominant_root_cause": "memory"
+    },
+    {
+      "layer_id": 38,
+      "layer_name": "layer0_ffn2_tiling0",
+      "operator_group": "ffn",
+      "shares": {
+        "latency_sum_share": 0.04946485305267399,
+        "energy_share": 0.02170344724715417,
+        "objective_reference": 1.7719416671760774e+20
+      },
+      "placement": {
+        "occurrences": 1,
+        "core_count": 1,
+        "cores": [
+          "core0"
+        ],
+        "batch_count": 1
+      },
+      "timing": {
+        "latency_sum": 2904934.0,
+        "latency_max": 2904934.0,
+        "critical_end": 49667856.0,
+        "calc_time": 2259366.0,
+        "noc_time": 645568.0,
+        "dram_time": 575608.0
+      },
+      "energy": {
+        "total": 4210619988.39104
+      },
+      "breakdown": {
+        "time": {
+          "compute": 0.649142001446901,
+          "communication": 0.18547915813111865,
+          "memory": 0.16537884042198026
+        },
+        "energy": {
+          "compute": 0.1667358708730852,
+          "buffer": 0.017729069333460645,
+          "communication": 0.08061511533594996,
+          "memory": 0.7349199444575042
+        }
+      },
+      "root_cause": {
+        "dominant_dimension": "memory"
+      },
+      "features": {
+        "group": "ffn",
+        "head": null,
+        "request": null,
+        "tiling": 0,
+        "is_projection": false,
+        "is_elementwise": false,
+        "gemm_shapes": [
+          {
+            "layer_id": 12326,
+            "M": 2175,
+            "N": 512,
+            "K": 14336,
+            "rhs": "parameter",
+            "scope": "execution_gemm_before_buffer_tiling",
+            "occurrences": 1,
+            "example_batch_ids": [
+              0
+            ]
+          }
+        ]
+      },
+      "impact_types": [
+        "latency",
+        "energy"
+      ],
+      "root_causes": [
+        "memory",
+        "compute"
+      ],
+      "dominant_root_cause": "memory"
+    },
+    {
+      "layer_id": 39,
+      "layer_name": "layer0_ffn2_tiling1",
+      "operator_group": "ffn",
+      "shares": {
+        "latency_sum_share": 0.04946485305267399,
+        "energy_share": 0.02170344724715417,
+        "objective_reference": 1.7719416671760774e+20
+      },
+      "placement": {
+        "occurrences": 1,
+        "core_count": 1,
+        "cores": [
+          "core0"
+        ],
+        "batch_count": 1
+      },
+      "timing": {
+        "latency_sum": 2904934.0,
+        "latency_max": 2904934.0,
+        "critical_end": 52572790.0,
+        "calc_time": 2259366.0,
+        "noc_time": 645568.0,
+        "dram_time": 575608.0
+      },
+      "energy": {
+        "total": 4210619988.39104
+      },
+      "breakdown": {
+        "time": {
+          "compute": 0.649142001446901,
+          "communication": 0.18547915813111865,
+          "memory": 0.16537884042198026
+        },
+        "energy": {
+          "compute": 0.1667358708730852,
+          "buffer": 0.017729069333460645,
+          "communication": 0.08061511533594996,
+          "memory": 0.7349199444575042
+        }
+      },
+      "root_cause": {
+        "dominant_dimension": "memory"
+      },
+      "features": {
+        "group": "ffn",
+        "head": null,
+        "request": null,
+        "tiling": 1,
+        "is_projection": false,
+        "is_elementwise": false,
+        "gemm_shapes": [
+          {
+            "layer_id": 12327,
+            "M": 2175,
+            "N": 512,
+            "K": 14336,
+            "rhs": "parameter",
+            "scope": "execution_gemm_before_buffer_tiling",
+            "occurrences": 1,
+            "example_batch_ids": [
+              0
+            ]
+          }
+        ]
+      },
+      "impact_types": [
+        "latency",
+        "energy"
+      ],
+      "root_causes": [
+        "memory",
+        "compute"
+      ],
+      "dominant_root_cause": "memory"
+    },
+    {
+      "layer_id": 40,
+      "layer_name": "layer0_ffn2_tiling2",
+      "operator_group": "ffn",
+      "shares": {
+        "latency_sum_share": 0.04946485305267399,
+        "energy_share": 0.02170344724715417,
+        "objective_reference": 1.7719416671760774e+20
+      },
+      "placement": {
+        "occurrences": 1,
+        "core_count": 1,
+        "cores": [
+          "core0"
+        ],
+        "batch_count": 1
+      },
+      "timing": {
+        "latency_sum": 2904934.0,
+        "latency_max": 2904934.0,
+        "critical_end": 55477724.0,
+        "calc_time": 2259366.0,
+        "noc_time": 645568.0,
+        "dram_time": 575608.0
+      },
+      "energy": {
+        "total": 4210619988.39104
+      },
+      "breakdown": {
+        "time": {
+          "compute": 0.649142001446901,
+          "communication": 0.18547915813111865,
+          "memory": 0.16537884042198026
+        },
+        "energy": {
+          "compute": 0.1667358708730852,
+          "buffer": 0.017729069333460645,
+          "communication": 0.08061511533594996,
+          "memory": 0.7349199444575042
+        }
+      },
+      "root_cause": {
+        "dominant_dimension": "memory"
+      },
+      "features": {
+        "group": "ffn",
+        "head": null,
+        "request": null,
+        "tiling": 2,
+        "is_projection": false,
+        "is_elementwise": false,
+        "gemm_shapes": [
+          {
+            "layer_id": 12328,
+            "M": 2175,
+            "N": 512,
+            "K": 14336,
+            "rhs": "parameter",
+            "scope": "execution_gemm_before_buffer_tiling",
+            "occurrences": 1,
+            "example_batch_ids": [
+              0
+            ]
+          }
+        ]
+      },
+      "impact_types": [
+        "latency",
+        "energy"
+      ],
+      "root_causes": [
+        "memory",
+        "compute"
+      ],
+      "dominant_root_cause": "memory"
+    },
+    {
+      "layer_id": 42,
+      "layer_name": "layer0_ffn2_tiling4",
+      "operator_group": "ffn",
+      "shares": {
+        "latency_sum_share": 0.049017360497516364,
+        "energy_share": 0.022798560080225978,
+        "objective_reference": 1.7719416671760774e+20
+      },
+      "placement": {
+        "occurrences": 1,
+        "core_count": 1,
+        "cores": [
+          "core1"
+        ],
+        "batch_count": 1
+      },
+      "timing": {
+        "latency_sum": 2878654.0,
+        "latency_max": 2878654.0,
+        "critical_end": 52476550.0,
+        "calc_time": 2259366.0,
+        "noc_time": 601888.0,
+        "dram_time": 619288.0
+      },
+      "energy": {
+        "total": 4423079508.39104
+      },
+      "breakdown": {
+        "time": {
+          "compute": 0.649142001446901,
+          "communication": 0.17292938858373208,
+          "memory": 0.17792860996936685
+        },
+        "energy": {
+          "compute": 0.15872683033350787,
+          "buffer": 0.01687746593056275,
+          "communication": 0.07168658293355908,
+          "memory": 0.7527091208023703
+        }
+      },
+      "root_cause": {
+        "dominant_dimension": "memory"
+      },
+      "features": {
+        "group": "ffn",
+        "head": null,
+        "request": null,
+        "tiling": 4,
+        "is_projection": false,
+        "is_elementwise": false,
+        "gemm_shapes": [
+          {
+            "layer_id": 12330,
+            "M": 2175,
+            "N": 512,
+            "K": 14336,
+            "rhs": "parameter",
+            "scope": "execution_gemm_before_buffer_tiling",
+            "occurrences": 1,
+            "example_batch_ids": [
+              0
+            ]
+          }
+        ]
+      },
+      "impact_types": [
+        "latency",
+        "energy"
+      ],
+      "root_causes": [
+        "memory",
+        "compute"
+      ],
+      "dominant_root_cause": "memory"
+    }
+  ],
+  "layer_count": 6,
+  "requested_layer_count": 6,
+  "truncated": false
+}

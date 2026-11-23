@@ -1,0 +1,944 @@
+{
+  "core0": [
+    {
+      "batchID": 0,
+      "calcTime": 5456,
+      "dramTime": 417600,
+      "latencyBegin": 0,
+      "latencyEnd": 423056,
+      "layerID": 0,
+      "layerName": "input_add",
+      "nocTime": 278400
+    },
+    {
+      "batchID": 0,
+      "calcTime": 4096,
+      "dramTime": 234752,
+      "latencyBegin": 423056,
+      "latencyEnd": 661904,
+      "layerID": 1,
+      "layerName": "layer0_norm1",
+      "nocTime": 139200
+    },
+    {
+      "batchID": 0,
+      "calcTime": 956034,
+      "dramTime": 148916,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 768,
+          "layer_id": 5,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 661904,
+      "latencyEnd": 1766854,
+      "layerID": 5,
+      "layerName": "layer0_qkv_gen_fused_tp_shard3",
+      "nocTime": 122816
+    },
+    {
+      "batchID": 0,
+      "calcTime": 956034,
+      "dramTime": 214452,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 768,
+          "layer_id": 6,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 1766854,
+      "latencyEnd": 2937340,
+      "layerID": 6,
+      "layerName": "layer0_qkv_gen_fused_tp_shard4",
+      "nocTime": 188352
+    },
+    {
+      "batchID": 0,
+      "calcTime": 956034,
+      "dramTime": 214452,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 768,
+          "layer_id": 7,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 2937340,
+      "latencyEnd": 4107826,
+      "layerID": 7,
+      "layerName": "layer0_qkv_gen_fused_tp_shard5",
+      "nocTime": 188352
+    },
+    {
+      "batchID": 0,
+      "calcTime": 956034,
+      "dramTime": 214452,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 768,
+          "layer_id": 8,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 4107826,
+      "latencyEnd": 5278312,
+      "layerID": 8,
+      "layerName": "layer0_qkv_gen_fused_tp_shard6",
+      "nocTime": 188352
+    },
+    {
+      "batchID": 0,
+      "calcTime": 6915232,
+      "dramTime": 5268225,
+      "gemm_shapes": [
+        {
+          "K": 128,
+          "M": 2048,
+          "N": 2048,
+          "layer_id": 10,
+          "rhs": "activation",
+          "scope": "execution_gemm_before_buffer_tiling"
+        },
+        {
+          "K": 128,
+          "M": 1,
+          "N": 2,
+          "layer_id": 12,
+          "rhs": "activation",
+          "scope": "execution_gemm_before_buffer_tiling"
+        },
+        {
+          "K": 128,
+          "M": 1,
+          "N": 3,
+          "layer_id": 14,
+          "rhs": "activation",
+          "scope": "execution_gemm_before_buffer_tiling"
+        },
+        {
+          "K": 128,
+          "M": 1,
+          "N": 3,
+          "layer_id": 16,
+          "rhs": "activation",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 5278312,
+      "latencyEnd": 17531369,
+      "layerID": 10,
+      "layerName": "layer0_Attn_QK",
+      "nocTime": 5337825
+    },
+    {
+      "batchID": 0,
+      "calcTime": 753122,
+      "dramTime": 189366,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 512,
+          "layer_id": 12298,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 19535960,
+      "latencyEnd": 20478448,
+      "layerID": 12,
+      "layerName": "layer0_out_proj_tiling_0",
+      "nocTime": 171970
+    },
+    {
+      "batchID": 0,
+      "calcTime": 753122,
+      "dramTime": 189366,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 512,
+          "layer_id": 12299,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 20478448,
+      "latencyEnd": 21420936,
+      "layerID": 13,
+      "layerName": "layer0_out_proj_tiling_1",
+      "nocTime": 171970
+    },
+    {
+      "batchID": 0,
+      "calcTime": 753122,
+      "dramTime": 189368,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 512,
+          "layer_id": 12303,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 21420936,
+      "latencyEnd": 22363426,
+      "layerID": 17,
+      "layerName": "layer0_out_proj_tiling_5",
+      "nocTime": 171968
+    },
+    {
+      "batchID": 0,
+      "calcTime": 753122,
+      "dramTime": 171968,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 512,
+          "layer_id": 12304,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 22363426,
+      "latencyEnd": 23288516,
+      "layerID": 18,
+      "layerName": "layer0_out_proj_tiling_6",
+      "nocTime": 171968
+    },
+    {
+      "batchID": 0,
+      "calcTime": 9552,
+      "dramTime": 617552,
+      "latencyBegin": 23288518,
+      "latencyEnd": 23915622,
+      "layerID": 20,
+      "layerName": "layer0_Out_Proj_Post",
+      "nocTime": 417600
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2270564,
+      "dramTime": 249252,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 1792,
+          "layer_id": 12315,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 23915622,
+      "latencyEnd": 26435438,
+      "layerID": 28,
+      "layerName": "layer0_ffn1_tiling7",
+      "nocTime": 188352
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2270564,
+      "dramTime": 314788,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 1792,
+          "layer_id": 12316,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 26435438,
+      "latencyEnd": 29020790,
+      "layerID": 29,
+      "layerName": "layer0_ffn_gate_tiling0",
+      "nocTime": 253888
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2270564,
+      "dramTime": 314788,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 1792,
+          "layer_id": 12317,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 29020790,
+      "latencyEnd": 31606142,
+      "layerID": 30,
+      "layerName": "layer0_ffn_gate_tiling1",
+      "nocTime": 253888
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2270564,
+      "dramTime": 314788,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 1792,
+          "layer_id": 12318,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 31606142,
+      "latencyEnd": 34191494,
+      "layerID": 31,
+      "layerName": "layer0_ffn_gate_tiling2",
+      "nocTime": 253888
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2270564,
+      "dramTime": 314788,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 1792,
+          "layer_id": 12319,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 34191494,
+      "latencyEnd": 36776846,
+      "layerID": 32,
+      "layerName": "layer0_ffn_gate_tiling3",
+      "nocTime": 253888
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2270564,
+      "dramTime": 314788,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 1792,
+          "layer_id": 12320,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 36776846,
+      "latencyEnd": 39362198,
+      "layerID": 33,
+      "layerName": "layer0_ffn_gate_tiling4",
+      "nocTime": 253888
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2270564,
+      "dramTime": 314788,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 1792,
+          "layer_id": 12321,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 39362198,
+      "latencyEnd": 41947550,
+      "layerID": 34,
+      "layerName": "layer0_ffn_gate_tiling5",
+      "nocTime": 253888
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2270564,
+      "dramTime": 253888,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 1792,
+          "layer_id": 12323,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 41947550,
+      "latencyEnd": 44472002,
+      "layerID": 36,
+      "layerName": "layer0_ffn_gate_tiling7",
+      "nocTime": 253888
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2259366,
+      "dramTime": 575608,
+      "gemm_shapes": [
+        {
+          "K": 14336,
+          "M": 2175,
+          "N": 512,
+          "layer_id": 12326,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 46762922,
+      "latencyEnd": 49667856,
+      "layerID": 38,
+      "layerName": "layer0_ffn2_tiling0",
+      "nocTime": 645568
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2259366,
+      "dramTime": 575608,
+      "gemm_shapes": [
+        {
+          "K": 14336,
+          "M": 2175,
+          "N": 512,
+          "layer_id": 12327,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 49667856,
+      "latencyEnd": 52572790,
+      "layerID": 39,
+      "layerName": "layer0_ffn2_tiling1",
+      "nocTime": 645568
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2259366,
+      "dramTime": 575608,
+      "gemm_shapes": [
+        {
+          "K": 14336,
+          "M": 2175,
+          "N": 512,
+          "layer_id": 12328,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 52572790,
+      "latencyEnd": 55477724,
+      "layerID": 40,
+      "layerName": "layer0_ffn2_tiling2",
+      "nocTime": 645568
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2259366,
+      "dramTime": 601888,
+      "gemm_shapes": [
+        {
+          "K": 14336,
+          "M": 2175,
+          "N": 512,
+          "layer_id": 12332,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 55477724,
+      "latencyEnd": 58338978,
+      "layerID": 44,
+      "layerName": "layer0_ffn2_tiling6",
+      "nocTime": 601888
+    }
+  ],
+  "core1": [
+    {
+      "batchID": 0,
+      "calcTime": 956034,
+      "dramTime": 148916,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 768,
+          "layer_id": 2,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 661904,
+      "latencyEnd": 1871826,
+      "layerID": 2,
+      "layerName": "layer0_qkv_gen_fused_tp_shard0",
+      "nocTime": 253888
+    },
+    {
+      "batchID": 0,
+      "calcTime": 956034,
+      "dramTime": 148916,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 768,
+          "layer_id": 3,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 1871826,
+      "latencyEnd": 3081748,
+      "layerID": 3,
+      "layerName": "layer0_qkv_gen_fused_tp_shard1",
+      "nocTime": 253888
+    },
+    {
+      "batchID": 0,
+      "calcTime": 956034,
+      "dramTime": 148916,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 768,
+          "layer_id": 4,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 3081748,
+      "latencyEnd": 4291670,
+      "layerID": 4,
+      "layerName": "layer0_qkv_gen_fused_tp_shard2",
+      "nocTime": 253888
+    },
+    {
+      "batchID": 0,
+      "calcTime": 956034,
+      "dramTime": 214452,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 768,
+          "layer_id": 9,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 4291670,
+      "latencyEnd": 5462156,
+      "layerID": 9,
+      "layerName": "layer0_qkv_gen_fused_tp_shard7",
+      "nocTime": 188352
+    },
+    {
+      "batchID": 0,
+      "calcTime": 8770752,
+      "dramTime": 5303025,
+      "gemm_shapes": [
+        {
+          "K": 2048,
+          "M": 2048,
+          "N": 128,
+          "layer_id": 8202,
+          "rhs": "activation",
+          "scope": "execution_gemm_before_buffer_tiling"
+        },
+        {
+          "K": 2,
+          "M": 1,
+          "N": 128,
+          "layer_id": 8203,
+          "rhs": "activation",
+          "scope": "execution_gemm_before_buffer_tiling"
+        },
+        {
+          "K": 3,
+          "M": 1,
+          "N": 128,
+          "layer_id": 8204,
+          "rhs": "activation",
+          "scope": "execution_gemm_before_buffer_tiling"
+        },
+        {
+          "K": 3,
+          "M": 1,
+          "N": 128,
+          "layer_id": 8205,
+          "rhs": "activation",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 5462156,
+      "latencyEnd": 19535960,
+      "layerID": 11,
+      "layerName": "layer0_Attn_AV",
+      "nocTime": 5163854
+    },
+    {
+      "batchID": 0,
+      "calcTime": 753122,
+      "dramTime": 189366,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 512,
+          "layer_id": 12300,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 19535960,
+      "latencyEnd": 20478448,
+      "layerID": 14,
+      "layerName": "layer0_out_proj_tiling_2",
+      "nocTime": 171966
+    },
+    {
+      "batchID": 0,
+      "calcTime": 753122,
+      "dramTime": 189368,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 512,
+          "layer_id": 12301,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 20478448,
+      "latencyEnd": 21420938,
+      "layerID": 15,
+      "layerName": "layer0_out_proj_tiling_3",
+      "nocTime": 171968
+    },
+    {
+      "batchID": 0,
+      "calcTime": 753122,
+      "dramTime": 189368,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 512,
+          "layer_id": 12302,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 21420938,
+      "latencyEnd": 22363428,
+      "layerID": 16,
+      "layerName": "layer0_out_proj_tiling_4",
+      "nocTime": 171968
+    },
+    {
+      "batchID": 0,
+      "calcTime": 753122,
+      "dramTime": 171968,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 512,
+          "layer_id": 12305,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 22363428,
+      "latencyEnd": 23288518,
+      "layerID": 19,
+      "layerName": "layer0_out_proj_tiling_7",
+      "nocTime": 171968
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2270564,
+      "dramTime": 249252,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 1792,
+          "layer_id": 12308,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 23915622,
+      "latencyEnd": 26505610,
+      "layerID": 21,
+      "layerName": "layer0_ffn1_tiling0",
+      "nocTime": 319424
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2270564,
+      "dramTime": 249252,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 1792,
+          "layer_id": 12309,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 26505610,
+      "latencyEnd": 29095598,
+      "layerID": 22,
+      "layerName": "layer0_ffn1_tiling1",
+      "nocTime": 319424
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2270564,
+      "dramTime": 249252,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 1792,
+          "layer_id": 12310,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 29095598,
+      "latencyEnd": 31685586,
+      "layerID": 23,
+      "layerName": "layer0_ffn1_tiling2",
+      "nocTime": 319424
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2270564,
+      "dramTime": 249252,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 1792,
+          "layer_id": 12311,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 31685586,
+      "latencyEnd": 34275574,
+      "layerID": 24,
+      "layerName": "layer0_ffn1_tiling3",
+      "nocTime": 319424
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2270564,
+      "dramTime": 249252,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 1792,
+          "layer_id": 12312,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 34275574,
+      "latencyEnd": 36865562,
+      "layerID": 25,
+      "layerName": "layer0_ffn1_tiling4",
+      "nocTime": 319424
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2270564,
+      "dramTime": 249252,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 1792,
+          "layer_id": 12313,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 36865562,
+      "latencyEnd": 39455550,
+      "layerID": 26,
+      "layerName": "layer0_ffn1_tiling5",
+      "nocTime": 319424
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2270564,
+      "dramTime": 249252,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 1792,
+          "layer_id": 12314,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 39455550,
+      "latencyEnd": 42045538,
+      "layerID": 27,
+      "layerName": "layer0_ffn1_tiling6",
+      "nocTime": 319424
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2270564,
+      "dramTime": 253888,
+      "gemm_shapes": [
+        {
+          "K": 4096,
+          "M": 2175,
+          "N": 1792,
+          "layer_id": 12322,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 42045538,
+      "latencyEnd": 44569990,
+      "layerID": 35,
+      "layerName": "layer0_ffn_gate_tiling6",
+      "nocTime": 253888
+    },
+    {
+      "batchID": 0,
+      "calcTime": 9548,
+      "dramTime": 2183384,
+      "latencyBegin": 44569990,
+      "latencyEnd": 46762922,
+      "layerID": 37,
+      "layerName": "layer0_FFN1_Act",
+      "nocTime": 1396192
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2259366,
+      "dramTime": 575608,
+      "gemm_shapes": [
+        {
+          "K": 14336,
+          "M": 2175,
+          "N": 512,
+          "layer_id": 12329,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 46762922,
+      "latencyEnd": 49597896,
+      "layerID": 41,
+      "layerName": "layer0_ffn2_tiling3",
+      "nocTime": 558208
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2259366,
+      "dramTime": 619288,
+      "gemm_shapes": [
+        {
+          "K": 14336,
+          "M": 2175,
+          "N": 512,
+          "layer_id": 12330,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 49597896,
+      "latencyEnd": 52476550,
+      "layerID": 42,
+      "layerName": "layer0_ffn2_tiling4",
+      "nocTime": 601888
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2259366,
+      "dramTime": 619288,
+      "gemm_shapes": [
+        {
+          "K": 14336,
+          "M": 2175,
+          "N": 512,
+          "layer_id": 12331,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 52476550,
+      "latencyEnd": 55355204,
+      "layerID": 43,
+      "layerName": "layer0_ffn2_tiling5",
+      "nocTime": 601888
+    },
+    {
+      "batchID": 0,
+      "calcTime": 2259366,
+      "dramTime": 601888,
+      "gemm_shapes": [
+        {
+          "K": 14336,
+          "M": 2175,
+          "N": 512,
+          "layer_id": 12333,
+          "rhs": "parameter",
+          "scope": "execution_gemm_before_buffer_tiling"
+        }
+      ],
+      "latencyBegin": 55355204,
+      "latencyEnd": 58216458,
+      "layerID": 45,
+      "layerName": "layer0_ffn2_tiling7",
+      "nocTime": 601888
+    },
+    {
+      "batchID": 0,
+      "calcTime": 5456,
+      "dramTime": 382800,
+      "latencyBegin": 58338978,
+      "latencyEnd": 58727234,
+      "layerID": 46,
+      "layerName": "layer0_FFN2_Post",
+      "nocTime": 278400
+    }
+  ]
+}
